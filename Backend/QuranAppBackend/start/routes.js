@@ -18,3 +18,5 @@ const Route = use("Route");
 
 Route.get("/", "InfoController.Index");
 Route.get("api/surah", "SurahController.Surah");
+Route.get("api/surah/:id", "SurahController.GetSurahById");
+Route.get("api/surah/:id/:ayah", "SurahController.getAyahFromSurah");
