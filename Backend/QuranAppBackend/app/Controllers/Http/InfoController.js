@@ -6,7 +6,10 @@ class InfoController {
       welcome: "Welcome To Quran App Api",
       Api: {
         SurahList: "api/surah",
+        GetSurahById: "api/surah/:id",
+        GetAyah: "api/surah/:id/:ayah",
       },
+      MadeBy: "Samer abd allah , smsssamer@live.com",
     };
   }
 }
