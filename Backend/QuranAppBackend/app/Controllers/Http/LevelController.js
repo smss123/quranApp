@@ -1,7 +1,10 @@
 "use strict";
 
 class LevelController {
-  async index() {}
+  async index({ request, response, view }) {
+    //Route.get(url, 'UserController.index')
+    return view.render("Levels.index");
+  }
 
   async Create() {}
 

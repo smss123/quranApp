@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+   <!-- Markazi Text font include just for persian demo purpose, don't include it in your project -->
+   <link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=arabic" rel="stylesheet">
+ <!-- CSS Files -->
+ <link href="/assets/css/material-dashboard.min.css?v=2.1.2" rel="stylesheet" />
+ <link href="/assets/css/material-dashboard-rtl.min.css?v=1.1" rel="stylesheet" />
+ <!-- CSS Just for demo purpose, don't include it in your project -->
+ <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <!-- Style Just for persian demo purpose, don't include it in your project -->
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4 {
+      font-family: "Cairo";
+    }
+  </style>
+</head>
+<body>
+
+  @!section('content')
+   <!--   Core JS Files   -->
+   <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+   <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+   <script src="/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+   <script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Chartist JS -->
+    <script src="/assets/js/plugins/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="/assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="/assets/js/material-dashboard.min.js?v=2.1.2" type="text/javascript"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="/assets/demo/demo.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Javascript method's body can be found in assets/js/demos.js
+        md.initDashboardPageCharts();
+
+      });
+    </script>
+    <!-- Sharrre libray -->
+    <script src="../assets/demo/jquery.sharrre.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        $('#facebook').sharrre({
+          share: {
+            facebook: true
+          },
+          enableHover: false,
+          enableTracking: false,
+          enableCounter: false,
+          click: function(api, options) {
+            api.simulateClick();
+            api.openPopup('facebook');
+          },
+          template: '<i class="fab fa-facebook-f"></i> Facebook',
+          url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+        });
+
+        $('#google').sharrre({
+          share: {
+            googlePlus: true
+          },
+          enableCounter: false,
+          enableHover: false,
+          enableTracking: true,
+          click: function(api, options) {
+            api.simulateClick();
+            api.openPopup('googlePlus');
+          },
+          template: '<i class="fab fa-google-plus"></i> Google',
+          url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+        });
+
+        $('#twitter').sharrre({
+          share: {
+            twitter: true
+          },
+          enableHover: false,
+          enableTracking: false,
+          enableCounter: false,
+          buttons: {
+            twitter: {
+              via: 'CreativeTim'
+            }
+          },
+          click: function(api, options) {
+            api.simulateClick();
+            api.openPopup('twitter');
+          },
+          template: '<i class="fab fa-twitter"></i> Twitter',
+          url: 'https://demos.creative-tim.com/material-dashboard/examples/dashboard.html'
+        });
+
+
+      });
+    </script>
+</body>
+</html>
