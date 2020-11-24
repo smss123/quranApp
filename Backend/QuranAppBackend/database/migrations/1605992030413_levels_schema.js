@@ -8,7 +8,8 @@ class LevelsSchema extends Schema {
     this.create("levels", (table) => {
       // alter table
       table.increments();
-      table.string("name");
+      table.string("Name");
+
       table.timestamps();
     });
   }
