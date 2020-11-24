@@ -24,4 +24,4 @@ Route.get("api/surah/:id", "SurahController.GetSurahById");
 Route.get("api/surah/:id/:ayah", "SurahController.getAyahFromSurah");
 
 /* Administrator Part */
-route.get("admin/levels/list", "LevelController.index");
+Route.get("admin/levels/list", "LevelController.index");

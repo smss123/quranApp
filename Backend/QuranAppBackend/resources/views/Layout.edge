@@ -32,8 +32,20 @@
   </style>
 </head>
 <body>
+  <div class="wrapper ">
 
-  @!section('content')
+    @include('Layouts.sidebar')
+
+    <div class="main-panel">
+      @include('Layouts.header')
+      <div class="content">
+        @!section('content')
+        @include('Layouts.footer')
+      </div>
+
+
+
+  </div>
    <!--   Core JS Files   -->
    <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
    <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
